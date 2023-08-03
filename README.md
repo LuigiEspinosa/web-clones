@@ -1,6 +1,6 @@
 # Web Clones
 
-List o Websites and the Stack
+List o Websites and their Stack
 
 | WEBSITE | STACK | CODE | PREVIEW |
 | ------- | ----- | ---- | ------- |
