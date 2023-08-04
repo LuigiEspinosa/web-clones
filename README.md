@@ -2,5 +2,6 @@
 
 List o Websites and their Stack
 
-| WEBSITE | STACK | CODE | PREVIEW |
-| ------- | ----- | ---- | ------- |
+| WEBSITE                         | STACK                       | PREVIEW |
+| ------------------------------- | --------------------------- | ------- |
+| [~~Twitter~~ X](https://x.com/) | Nuxt 3, TailwindCSS, Prisma |         |
