@@ -12,7 +12,7 @@
 
           <!-- Main Content -->
           <main class="col-span-12 md:col-span-8 xl:col-span-6">
-            <h1>Main Content</h1>
+            <router-view />
           </main>
 
           <!-- Right Sidebar -->
