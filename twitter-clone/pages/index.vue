@@ -1,7 +1,7 @@
 <template>
   <div>
     <MainSection title="Home" :loading="loading">
-      <pre class="px-4">{{ JSON.stringify(user, null, 2) }}</pre>
+      <TweetForm :user="user" />
     </MainSection>
   </div>
 </template>
