@@ -5,7 +5,7 @@ import { decodeAccessToken } from "../utils/jwt";
 import { getUserById } from "../db/users";
 
 export default defineEventHandler(async (event) => {
-  const endpoints = ["/api/auth/user", "/api/user/tweets"];
+  const endpoints = ["/api/auth/user", "/api/user/tweets", "/api/tweets"];
 
   const middlewareHandler = endpoints.some((endpoint) => {
     const pattern = new UrlPattern(endpoint);

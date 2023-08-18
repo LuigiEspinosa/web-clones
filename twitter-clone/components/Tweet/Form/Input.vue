@@ -114,8 +114,10 @@
         </div>
       </div>
 
-      <div>
-        <button @click="handleFormSubmit">Tweet</button>
+      <div class="ml-auto">
+        <UIButton size="sm" :disabled="isDisabled" @onClick="handleFormSubmit">
+          <span class="font-bold">Tweet</span>
+        </UIButton>
       </div>
     </div>
   </div>
@@ -129,6 +131,8 @@ const inputImageUrl = ref(null);
 const text = ref("");
 
 const emits = defineEmits(["onSubmit"]);
+
+const isDisabled = computed(() => text.value === "");
 
 const props = defineProps({
   user: {

@@ -5,7 +5,11 @@
     </div>
 
     <div>
-      <TweetFormInput :user="props.user" @onSubmit="handleFormSubmit" />
+      <TweetFormInput
+        :user="props.user"
+        @onSubmit="handleFormSubmit"
+        placeholder="What's happening?"
+      />
     </div>
   </div>
 </template>
