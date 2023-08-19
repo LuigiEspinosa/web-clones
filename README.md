@@ -2,5 +2,6 @@
 
 List o Websites and the Stack
 
-| WEBSITE | STACK | CODE | PREVIEW |
-| ------- | ----- | ---- | ------- |
+| WEBSITE                         | STACK                  | PREVIEW |
+| ------------------------------- | ---------------------- | ------- |
+| [Tesla](https://www.tesla.com/) | React, Redux, Firebase |         |
