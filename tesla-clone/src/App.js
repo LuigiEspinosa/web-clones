@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/Header";
 import Menu from "./components/Menu";
+import HeaderBlock from "./components/HeaderBlock";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         {isMenuOpen ? <Menu /> : null}
+        <HeaderBlock />
       </div>
     </Router>
   );
