@@ -46,6 +46,7 @@
   min-width: 330px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px;
 }
 
 .login__info > h1 {
