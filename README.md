@@ -2,9 +2,9 @@
 
 List o Websites and the Stack
 
-| WEBSITE                         | STACK                               | PREVIEW |
-| ------------------------------- | ----------------------------------- | ------- |
-| [Tesla](https://www.tesla.com/) | React, Redux, Material UI, Firebase |         |
+| WEBSITE                                                                     | STACK                               | PREVIEW                        |
+| --------------------------------------------------------------------------- | ----------------------------------- | ------------------------------ |
+| <a href="https://www.tesla.com/" target="_blank" rel="noreferrer">Tesla</a> | React, Redux, Material UI, Firebase | https://web-clones.vercel.app/ |
 
 ---
 
