@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { updateProfile, createUserWithEmailAndPassword } from "firebase/auth";
 
 import { auth } from "../../firebase";
 import { login } from "../../features/userSlice";
@@ -12,7 +12,7 @@ import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
 import "./Signup.css";
 
 function Signup() {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
@@ -26,22 +26,23 @@ function Signup() {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userAuth) => {
-        userAuth.user.updateProfile({
-          displayName: fName,
-        });
-      })
-      .then((userAuth) => {
-        dispath(
-          login({
-            uid: userAuth.user.uid,
+        if (userAuth && userAuth.user) {
+          updateProfile(userAuth.user, {
             displayName: fName,
-            email: userAuth.user.email,
-          })
-        );
+          }).then(() => {
+            dispatch(
+              login({
+                uid: userAuth.user.uid,
+                displayName: fName,
+                email: userAuth.user.email,
+              })
+            );
 
-        navigate("/tesla-account");
+            navigate("/tesla-account");
+          });
+        }
       })
-      .catch((error) => setError(error));
+      .catch((error) => setError(error.message));
   };
 
   return (
@@ -101,7 +102,7 @@ function Signup() {
             required
           />
 
-          {error ? <p className="signup__error">{`${error.name}: ${error.code}`}</p> : null}
+          {error ? <p className="signup__error">{error}</p> : null}
 
           <ButtonPrimary name="Create Account" type="submit" onClick={signUp} />
         </form>

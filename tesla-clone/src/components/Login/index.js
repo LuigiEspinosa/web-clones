@@ -16,6 +16,7 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -32,7 +33,7 @@ function Login() {
 
         navigate("/tesla-account");
       })
-      .catch((error) => console.error(error));
+      .catch((error) => setError(error));
   };
 
   return (
@@ -65,6 +66,8 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+
+          {error ? <p className="signup__error">{`${error.name}: ${error.code}`}</p> : null}
 
           <ButtonPrimary name="Sign In" type="submit" onClick={handleSignIn} />
         </form>
