@@ -3,7 +3,6 @@
 
 ### dotenv ###
 .env
-**/environments/*
 
 ### Firebase ###
 .idea
