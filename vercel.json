@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/tesla-clone/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/apps/tesla-clone"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/apps/tesla-clone/$1"
+    }
+  ]
+}
