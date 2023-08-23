@@ -11,15 +11,15 @@
   },
   "private": true,
   "dependencies": {
-    "@swc/helpers": "~0.5.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "6.11.2",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@reduxjs/toolkit": "^1.8.1",
+    "@swc/helpers": "~0.5.0",
     "firebase": "^10.2.0",
-    "react-redux": "^8.0.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "6.11.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
