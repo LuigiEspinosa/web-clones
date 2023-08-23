@@ -1,4 +1,12 @@
-# WebClones
+# Web Clones
+
+List o Websites and the Stack
+
+| WEBSITE                         | STACK                              | PREVIEW |
+| ------------------------------- | ---------------------------------- | ------- |
+| [Tesla](https://www.tesla.com/) | React, Redux, MaterialUI, Firebase |         |
+
+---
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -42,7 +50,7 @@ Have a look at the [Nx Console extensions](https://nx.dev/nx-console). It provid
 
 Just run `nx build demoapp` to build the application. The build artifacts will be stored in the `dist/` directory, ready to be deployed.
 
-## Set up CI!
+## Set up CI
 
 Nx comes with local caching already built-in (check your `nx.json`). On CI you might want to go a step further.
 
@@ -50,7 +58,7 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Set up task distribution across multiple machines](https://nx.dev/core-features/distribute-task-execution)
 - [Learn more how to setup CI](https://nx.dev/recipes/ci)
 
-## Connect with us!
+## Connect with us
 
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
